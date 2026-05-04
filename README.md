@@ -14,3 +14,6 @@ R4	1	10k				Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
 SW1,SW2,SW3	3	SW_Push				Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB	
 U1	1	XIAO-RP2040-DIP				XIAO:XIAO-RP2040-DIP	
 U2	1	MAX7219				MAX7219:DIL24	https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf
+
+<img width="829" height="515" alt="Screenshot 2026-05-04 at 1 34 44 PM" src="https://github.com/user-attachments/assets/cdce3be5-1e6c-4705-be89-920ce8c0eaea" />
+
