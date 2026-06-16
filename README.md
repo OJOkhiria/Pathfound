@@ -1,7 +1,12 @@
 # Pathfound
-A custom PCB controller board and efidget that uses a Xiao RP2040 microcontroller and a MAX7219 IC to increment or decrement your clicks from 0-99 and use them to turn on LEDS. The Xiao microcontroller provides the logic for the LEDs and the MAX7219. Specifically, by assigning the buttons to inputs on the Xiao (pressed is high and unpressed is low), you can assign high and low values to the LEDs, which are designated as outputs. Using the same logic, the controller outputs counting data to the MAX7219, which uses two seven-segment displays: one for the ones digit, and one for the tens digit. 
+A custom PCB controller board and efidget that uses a Xiao RP2040 microcontroller and a MAX7219 IC to increment or decrement your clicks from 0-99 and use them to turn on LEDS. The Xiao microcontroller provides the logic for the LEDs and the MAX7219. Specifically, by assigning the buttons to inputs on the Xiao (pressed is high and unpressed is low), you can assign high and low values to the LEDs, which are designated as outputs. 
 
-There are three buttons that you can use with this counting logic, an increase button that increments your count by 1, a decrease button that decrements your count by 1, and a reset button that sets your count to 0, regardless of what number you're on. The project schematics and PCB were designed in KiCad, and the firmware was programmed in C++ using the Arduino IDE.
+Specifically, pressing Button1 will turn on LED1 (the rightmost one) and increase the counter. If Button2 is pressed within 2 seconds of Button1, LED2 will light up; pressing Button2 also decrements the counter. Button3 turns on LED3 (leftmost LED), but it must be held for at least 800 milliseconds. This minimim hold time also applies to the reset for the counter to allow resetting to be a little more intentional. The controller outputs this counting data to the MAX7219, which uses two seven-segment displays: one for the ones digit, and one for the tens digit. 
+
+ The project schematics and PCB were designed in KiCad, and the firmware was programmed in C++ using the Arduino IDE.
+
+<img width="4032" height="3024" alt="IMG_4860" src="https://github.com/user-attachments/assets/2ce5bb58-956a-4e25-b978-f5bed56444a5" />
+ 
 <img width="1288" height="770" alt="Screenshot 2026-05-03 at 11 28 37 PM" src="https://github.com/user-attachments/assets/d1b6a53b-58de-4adf-8ac7-92c4b40c24d3" />
 <img width="996" height="596" alt="Screenshot 2026-05-03 at 11 27 09 PM" src="https://github.com/user-attachments/assets/9b85a183-6f0b-4064-94c5-cb414830dc8c" />
 
