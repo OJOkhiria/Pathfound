@@ -3,7 +3,9 @@ A custom PCB controller board and efidget that uses a Xiao RP2040 microcontrolle
 
 Specifically, pressing Button1 will turn on LED1 (the rightmost one) and increase the counter. If Button2 is pressed within 2 seconds of Button1, LED2 will light up; pressing Button2 also decrements the counter. Button3 turns on LED3 (leftmost LED), but it must be held for at least 800 milliseconds. This minimim hold time also applies to the reset for the counter to allow resetting to be a little more intentional. The controller outputs this counting data to the MAX7219, which uses two seven-segment displays: one for the ones digit, and one for the tens digit. 
 
- The project schematics and PCB were designed in KiCad, and the firmware was programmed in C++ using the Arduino IDE. I mostly made this project to have something to fidget with on my desk.
+ The project schematics and PCB were designed in KiCad, and the firmware was programmed in C++ using the Arduino IDE. I mostly made this project to have something to fidget with on my desk. You can see the demo videos at the link below!
+
+ https://drive.google.com/drive/folders/1nguAO52aBdsrP4bzh1c_a4cOokNBXf4z?usp=drive_link
 
 <img width="4032" height="3024" alt="IMG_4860" src="https://github.com/user-attachments/assets/2ce5bb58-956a-4e25-b978-f5bed56444a5" />
  
