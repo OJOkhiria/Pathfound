@@ -1,9 +1,9 @@
 # Pathfound
-A custom PCB controller board and efidget that uses a Xiao RP2040 microcontroller and a MAX7219 IC to increment or decrement your clicks from 0-99 and use them to turn on LEDS. The Xiao microcontroller provides the logic for the LEDs and the MAX7219. Specifically, by assigning the buttons to inputs on the Xiao (pressed is high and unpressed is low), you can assign high and low values to the LEDs, which are designated as outputs. 
+A custom PCB controller board and efidget that uses a Xiao RP2040 microcontroller and a MAX7219 IC to increment or decrement your clicks from 0-99 and uses them to turn on LEDS. The Xiao microcontroller provides the logic for the LEDs and the MAX7219. Specifically, by assigning the buttons to inputs on the Xiao (pressed is high and unpressed is low), you can assign high and low values to the LEDs, which are designated as outputs. 
 
 Specifically, pressing Button1 will turn on LED1 (the rightmost one) and increase the counter. If Button2 is pressed within 2 seconds of Button1, LED2 will light up; pressing Button2 also decrements the counter. Button3 turns on LED3 (leftmost LED), but it must be held for at least 800 milliseconds. This minimim hold time also applies to the reset for the counter to allow resetting to be a little more intentional. The controller outputs this counting data to the MAX7219, which uses two seven-segment displays: one for the ones digit, and one for the tens digit. 
 
- The project schematics and PCB were designed in KiCad, and the firmware was programmed in C++ using the Arduino IDE.
+ The project schematics and PCB were designed in KiCad, and the firmware was programmed in C++ using the Arduino IDE. I mostly made this project to have something to fidget with on my desk.
 
 <img width="4032" height="3024" alt="IMG_4860" src="https://github.com/user-attachments/assets/2ce5bb58-956a-4e25-b978-f5bed56444a5" />
  
